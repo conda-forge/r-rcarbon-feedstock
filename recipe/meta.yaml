@@ -1,4 +1,4 @@
-{% set version = '1.5.1' %}
+{% set version = "1.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rcarbon_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rcarbon/rcarbon_{{ version }}.tar.gz
-  sha256: f59d4fec1c47fde1da7037273a3acc07079983280059aac23e8ac7a2a204ee71
+  sha256: c1d8aed4f00f0d0a673de8f9e3e5e5da94c98ad1ddc7e46a4d556b04a94fb216
 
 build:
   number: 0
@@ -61,14 +61,8 @@ test:
 about:
   home: https://github.com/ahb108/rcarbon/
   license: GPL-2.0-or-later
-  summary: 'Enables the calibration and analysis of radiocarbon dates, often but not exclusively
-    for the purposes of archaeological research. It includes functions not only for
-    basic calibration, uncalibration, and plotting of one or more dates, but also a
-    statistical framework for building demographic and related longitudinal inferences
-    from aggregate radiocarbon date lists, including: Monte-Carlo simulation test (Timpson
-    et al 2014 <doi:10.1016/j.jas.2014.08.011>), random mark permutation test (Crema
-    et al 2016 <doi:10.1371/journal.pone.0154809>) and spatial permutation tests (Crema,
-    Bevan, and Shennan 2017 <doi:10.1016/j.jas.2017.09.007>).'
+  summary: 'Enables the calibration and analysis of radiocarbon dates, often but not exclusively for the purposes of archaeological research. It includes functions not only for basic calibration, uncalibration, and plotting of one or more dates, but also a statistical framework for building demographic and related longitudinal
+    inferences from aggregate radiocarbon date lists, including: Monte-Carlo simulation test (Timpson et al 2014 <doi:10.1016/j.jas.2014.08.011>), random mark permutation test (Crema et al 2016 <doi:10.1371/journal.pone.0154809>) and spatial permutation tests (Crema, Bevan, and Shennan 2017 <doi:10.1016/j.jas.2017.09.007>).'
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
